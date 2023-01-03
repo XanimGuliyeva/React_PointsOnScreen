@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    outline: none;
+    border: none;
+    text-decoration: none;
+}
+#root, body, html{
+    background-color: black;
+    height: 100%;
+}
+.screen{
+    height: 100%;
+}
+
+.point{
+    width: 15px;
+    height: 15px;
+    background-color: red;
+    border-radius: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+}
+
+.header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 2em;
+    display: flex;
+    gap: 1em;
+}
+
+.header button{
+    height: 4em;
+    padding: 0 4em;
+    border-radius: 0.3em;
+    font-size: 1em;
+    background-color: #fff;
+    color: #111;
+    cursor: pointer;
+}
+.header button[disabled]{
+    opacity: .5;
+}
